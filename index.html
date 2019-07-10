@@ -23,6 +23,9 @@
   /* Clemson Innovation Gray #86898C */
   /* Clemson Blue Ridge #3A4958 */
   /* Clemson Hartwell Moon #D4C99E */
+  /* Clemson Anna's Lace #F9E498 */
+  /* Clemson Tillman Brick #A25016 */
+  /* Clemson Howard's Rock #685C53 */
   #mediaIcons a {
   	padding-right: 20px;
     padding-left: 20px;
@@ -66,40 +69,18 @@
     color: #86898C;
   }
   .bg-4 { 
-    background-color: #3A4958;
+    background-color: #F9E498;
     color: #86898C;
+  }
+  .bg-5 {
+    background-color: #3A4958;
+    color: #86898C; 
   }
   .container-fluid {
     padding-top: 30px;
     padding-bottom: 50px;
  
   }
-
-  .navbar {
-    overflow: hidden;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0px;
-    font-size: 12px;
-    letter-spacing: 5px;
-    height: 50px;
-    background-color: #3A4958;
-  }
-  .navbar-nav  li a:hover {
-    color: #86898C !important;
-  }
-    .navbar-brand:hover {
-      color: #86898C !important;
-    }
-    .anchor:before {
-      display: block;
-      content: "  ";
-      height: 49px;
-      margin-top: -50px;
-      visibility: hidden;
-    }
   .slideanim {visibility:hidden;}
   .slide {
     animation-name: slide;
@@ -128,6 +109,34 @@
       -webkit-transform: translateY(0%);
     }
   }
+  .navbar {
+    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    background-color: #3A4958;
+  }
+  .navbar-nav  li a:hover {
+    color: #86898C !important;
+  }
+  .navbar-brand:hover {
+    color: #86898C !important;
+  }
+  .anchor:before {
+    display: block;
+    content: "  ";
+    height: 49px;
+    margin-top: -50px;
+    visibility: hidden;
+  }
+    .clem:before {
+      background:url('https://www.clemson.edu/brand/resources/logos/seal/orange-purple.png');
+    }
+
 
   </style>
 </head>
@@ -140,17 +149,25 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#about">CHRISTOPHER BRANT</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
         <li><a href="#resume">RESUME</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
+    <script>
+    $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a:not(".dropdown-toggle")') ) {
+            $(this).collapse('hide');
+        }
+    });
+    </script>
   </div>
 </nav>
 
@@ -163,9 +180,51 @@
 </div>
 
 <!-- Second Container -->
-<div id="resume" class="anchor"></div>
+<div id="skills" class="anchor"></div>
 <div class="container-fluid bg-2 text-center">
-  <h2 class="w3-text-grey" style="padding-bottom: 24px;"><i class="fa fa-file-text fa-fw w3-margin-right w3-xxxlarge"></i>Current Resume</h2>
+  <h1 class="w3-text-grey" style="padding-bottom: 24px;"><i class="fa fa-wrench fa-fw w3-margin-right w3-xxxlarge"></i>Major Skills</h1>
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>Basic Qualifications</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code-fork fa-fw w3-margin-right w3-xxlarge"></i>Advanced Skills and Topics</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <p>Bachelor Degree</p><br>
+        </div>
+      </div>
+</div>
+  
+<!-- Third Container -->
+<div id="resume" class="anchor"></div>
+<div class="container-fluid bg-3 text-center">
+  <h1 class="w3-text-grey" style="padding-bottom: 24px;"><i class="fa fa-file-text fa-fw w3-margin-right w3-xxxlarge"></i>Current Resume</h1>
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge"></i>Work Experience</h2>
@@ -191,28 +250,27 @@
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
+          <img src="http://identity.ufl.edu/wp-content/uploads/2015/11/UF_Seal.gif" width=75>
+          <h5 class="w3-opacity"><b>University of Florida</b></h5>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2024</h6>
+          <p>Currently pursuing my Master's Degree and a Doctorate of Philosophy in Computer Engineering and Network Design and Security.
+           Expected to receive my Master's Degree in 2021 followed by my Doctorate of Philosophy in 2024.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+          <img src="https://www.clemson.edu/brand/resources/logos/seal/orange-purple.png" width=75>
+          <h5 class="w3-opacity"><b>Clemson University</b></h5></img>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
+          <p>In May of 2019, I received my Bachelor's Degree in  Computer Engineering with a minor in Cybersecurity. 
+          Graduated with honors, summa cum laude, as well as I received the Faculty Scholarship Award for completing
+          my degree at Clemson University with a 4.0 cumulative GPA.</p><br>
         </div>
       </div>
 </div>
 
-<!-- Third Container (Grid) -->
+<!-- Fourth Container (Grid) -->
 <div id="contact" class="anchor"></div>
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-4 text-center">    
   <h3 class="margin">Contact Me</h3><br> 
   <div class="row">
     <div class="col-sm-4">
@@ -231,7 +289,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
+<footer class="container-fluid bg-5 text-center">
   <div id="mediaIcons">
   <!-- Add font awesome icons -->
     <h3> <b>Find Me On</b> </h1>
