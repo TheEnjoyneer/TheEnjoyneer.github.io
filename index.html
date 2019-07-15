@@ -135,16 +135,14 @@
   }
   .my-list {
     font-size: 14px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: 20%;
-    text-align: left;
+    display: inline-block;
+    max-width: 425px;
   }
   .my-lang {
     font-size: 14px;
-    width: 35%;
-    margin-left: auto;
-    margin-right: 30%;
+    display: inline-block;
+  }
+  ul {
     text-align: left;
   }
   #location {
@@ -205,7 +203,7 @@
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>Basic Qualifications</h2>
-        <div class="w3-container">
+        <div class="w3-container" style="text-align: center;">
           <h5 class="w3-opacity"><b>Programming Languages Proficiency</b></h5>
           <p>Fully proficient in the following programming languages:</p>
           <ul class="my-lang">
@@ -269,13 +267,14 @@
           <h5 class="w3-opacity"><b>Topics of Personal Specialization</b></h5>
           <p>In graduate school I will be focusing on a few specialized topics for my research.</p>
           <p>The following topics are my chosen areas of specialization</p>
-          <ul class="my-list">
+          <ul class="my-lang">
             <li>IoT Networking Design and Efficiency</li>
             <li>IoT Networking Security</li>
             <li>Large Scale IoT Device Networking Applications</li>
             <li>Autonomous Vehicle Network Design</li>
             <li>General Network Security Protocol Design</li>
           </ul>
+          <br>
           <br>
         </div>
       </div>
