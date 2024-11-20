@@ -114,7 +114,12 @@
       -webkit-transform: translateY(0%);
     }
   }
+  .content{
+    padding-top: 20px;
+  }
   .navbar {
+    padding: 20px;
+    position: relative;
     overflow: hidden;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -188,27 +193,28 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="1">
-
-<!-- Navbar -->
-<nav class="navbar navbar-dark navbar-inverse fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/index.html">CHRISTOPHER BRANT</a>
+<header class="navbar">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark navbar-inverse fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/index.html">CHRISTOPHER BRANT</a>
+      </div>
+      <ul class="nav navbar-nav d-flex flex-row">
+        <li class="dropdown p-2">
+          <a class="dropdown-toggle" data-toggle="dropdown">HOME
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="nav-item p-2"><a href="/index.html#about">ABOUT</a></li>
+            <li class="nav-item p-2"><a href="/index.html#skills">SKILLS</a></li>
+            <li class="nav-item p-2"><a href="/index.html#resume">RESUME</a></li>
+            <li class="nav-item p-2"><a href="/index.html#contact">CONTACT</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav d-flex flex-row">
-      <li class="dropdown p-2">
-        <a class="dropdown-toggle" data-toggle="dropdown">HOME
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li class="nav-item p-2"><a href="/index.html#about">ABOUT</a></li>
-          <li class="nav-item p-2"><a href="/index.html#skills">SKILLS</a></li>
-          <li class="nav-item p-2"><a href="/index.html#resume">RESUME</a></li>
-          <li class="nav-item p-2"><a href="/index.html#contact">CONTACT</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <!-- <nav class="navbar navbar-dark fixed-top">
   <a class="navbar-brand" href="#about">CHRISTOPHER BRANT</a>
@@ -236,6 +242,7 @@
   </div>  
 </nav> -->
 
+<main class="content">
 <!-- First Container -->
 <div id="about" class="anchor"></div>
 <div class="container-fluid bg-1 text-center">
@@ -537,6 +544,7 @@
     </div>
   </div>
 </div>
+</content>
 
 <!-- Footer -->
 <footer class="container-fluid bg-5 text-center">
